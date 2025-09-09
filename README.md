@@ -1,24 +1,12 @@
 # README
+> Sample Rails project - per user notes
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+- Ruby 3.4.5
+- PostgreSQL 17
+- Bun 1.2.21 (NodeJS 22.x)
 
-Things you may want to cover:
+Default admin (`/admin`) account:
+- Login: `admin@example.com`
+- Password: `password`
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Run with: `bin/dev`
