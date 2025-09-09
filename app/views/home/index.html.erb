@@ -1,6 +1,8 @@
-<h1>Sample App</h1>
+<h1 class="text-5xl font-bold mb-4">Sample App</h1>
 
-<%= link_to "View notes", notes_path, class: "btn btn-primary mb-3" %>
-<% if user_signed_in? %>
-  <%= button_to "Log out", destroy_user_session_path, method: :delete, class: "btn btn-primary mb-3" %>
-<% end %>
+<div>
+  <%= link_to "View notes", notes_path, class: "text-blue-900 mb-3" %>
+  <% if user_signed_in? %>
+    <%= button_to "Log out", destroy_user_session_path, method: :delete, class: "text-orange-900 mb-3" %>
+  <% end %>
+</div>

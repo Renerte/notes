@@ -2,18 +2,20 @@
 
 <% content_for :title, "Your notes" %>
 
-<h1>Notes</h1>
+<h1 class="text-4xl font-bold">Notes</h1>
 
 <div id="notes">
   <% @notes.each do |note| %>
     <hr />
     <%= render note %>
     <p>
-      <%= link_to "Show this note", note %>
+      <%= link_to "Show this note", note, class: 'text-blue-900' %>
     </p>
   <% end %>
 </div>
 <hr />
 
-<%= link_to "New note", new_note_path %>
-<%= link_to "Back to home", root_path %>
+<div>
+  <%= link_to "New note", new_note_path, class: 'text-blue-900' %> |
+  <%= link_to "Back to home", root_path, class: 'text-blue-900' %>
+</div>

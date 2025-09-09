@@ -8,6 +8,11 @@
     "tailwindcss": "^3.4.17"
   },
   "scripts": {
-    "build:css": "tailwindcss -i ./app/assets/stylesheets/active_admin.css -o ./app/assets/builds/active_admin.css --minify -c tailwind-active_admin.config.js"
+    "build:css": "conc -P 'npm:build:admin_css -- {@}' 'npm:build:app_css -- {@}' --",
+    "build:admin_css": "tailwindcss -i ./app/assets/stylesheets/active_admin.css -o ./app/assets/builds/active_admin.css --minify -c tailwind-active_admin.config.js",
+    "build:app_css": "tailwindcss -i ./app/assets/stylesheets/application.tailwind.css -o ./app/assets/builds/application.tailwind.css --minify -c tailwind.config.js"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
   }
 }
