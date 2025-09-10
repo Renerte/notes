@@ -64,5 +64,5 @@ end
 
 gem "devise", "~> 4.9"
 gem "activeadmin", "~> 4.0.0beta16"
-gem "cssbundling-rails", "= 1.4.1"
+gem "cssbundling-rails", "1.4.3"
 gem "tailwindcss-ruby", "~> 3.4.17"
